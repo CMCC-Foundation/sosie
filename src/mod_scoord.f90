@@ -12,7 +12,7 @@ CONTAINS
 
       TYPE( scoord_params ),INTENT(in)                 :: zs_par
       INTEGER,INTENT(in)                               :: zn_nx, zn_ny, zn_nz
-      REAL(wpl),DIMENSION(zn_nx,zn_ny),INTENT(in)           :: zz_bathy
+      REAL(wpl),DIMENSION(zn_nx,zn_ny),INTENT(in)      :: zz_bathy
       REAL(4),DIMENSION(zn_nx,zn_ny,zn_nz),INTENT(out) :: zz_depth
 
       !! local
