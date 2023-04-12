@@ -5,12 +5,12 @@
 FC = ifort -qopenmp
 
 # Root directory:
-NC_F_INC = ${NETCDF_FORTRAN_INCLUDE}
-ifndef NC_F_INC
-NETCDFF_DIR = ${NETCDF}
-else
-NETCDFF_DIR = ${NETCDF_FORTRAN_HOME}
-endif
+#NC_F_INC = ${NETCDF_FORTRAN_INCLUDE}
+#ifndef NC_F_INC
+#NETCDFF_DIR = ${NETCDF}
+#else
+#NETCDFF_DIR = ${NETCDF_FORTRAN_HOME}
+#endif
 
 
 # Linking argument: usually -lnetcdf or -lnetcdff (or both):
