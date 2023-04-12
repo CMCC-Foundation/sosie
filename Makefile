@@ -17,7 +17,10 @@ NCDF_INC=$(NETCDF_DIR)/include
 #========================================================
 
 # LIBRARY linking:
-LD_NC  = -L$(NCDF_LIB) $(L_NCDF) ; # "L_NCDF" defined in make.macro ... (ex: "-lnetcdff")
+#LD_NC  = -L$(NCDF_LIB) $(L_NCDF) ; # "L_NCDF" defined in make.macro ... (ex: "-lnetcdff")
+NCDFF_LIB=$(NETCDFF_DIR)/lib
+NCDFF_INC=$(NETCDFF_DIR)/include
+LD_NC  = -L$(NCDF_LIB) $(L_NCDF) -L$(NCDFF_LIB)  $(L_NCDFF) 
 LD_ALL = -L./lib -lsosie $(LD_NC)
 
 # Disable implicit rules to speedup build
