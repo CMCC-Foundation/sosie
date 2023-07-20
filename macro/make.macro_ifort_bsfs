@@ -21,7 +21,8 @@ L_NCDFF = -lnetcdff
 
 #EXTRA_DEBUG_FLAGS = -g -check all -fpe0 -warn all -traceback -debug extended -C
 
-FF = -xSKYLAKE-AVX512 -O3 -i4  -module mod/ $(EXTRA_DEBUG_FLAGS)
+#FF = -xSKYLAKE-AVX512 -O3 -i4  -module mod/ $(EXTRA_DEBUG_FLAGS)
+FF = -march=icelake-client -O3 -i4  -module mod/ $(EXTRA_DEBUG_FLAGS)
 #$(EXTRA_DEBUG_FLAGS) -module mod/
 FF_SAFE = $(FF)
 
